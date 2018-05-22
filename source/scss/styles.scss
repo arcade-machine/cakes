@@ -1,9 +1,15 @@
-@import "blocks/footer.scss";
+@import "utils/scaffolding.scss";
 
-.testing {
-  width: percentage(2/7);
-}
-
-body {
-  background-color: none;
-}
+@import "blocks/footer.scss",
+"blocks/header.scss",
+"blocks/main-navigation.scss",
+"blocks/intro.scss",
+"blocks/button.scss",
+"blocks/cakes.scss",
+"blocks/cake-types.scss",
+"blocks/individual.scss",
+"blocks/DIY-cake.scss",
+"blocks/filling.scss",
+"blocks/size.scss",
+"blocks/decor.scss",
+"blocks/order.scss";

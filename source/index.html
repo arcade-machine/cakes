@@ -6,129 +6,141 @@
     <title>Магазин "Cakes", торты на заказ</title>
   </head>
   <body>
-    <header class="main-header">
-      <h1 class="visually-hidden">Магазин "Cakes", торты на заказ</h1>
-      <a class="main-header__logo">Cakes</a>
-      <nav class="main-header__navigation main-navigation">
-        <button class="main-navigation__toggle" type="button">Открытие меню</button>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Наши торты</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Индивидуальный заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Отзывы</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">О нас</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Как заказать</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-page">
-      <section class="main-page__intro intro">
-        <h2 class="intro__head">Торты на заказ</h2>
-        <p class="intro__handmade">Ручная работа</p>
-        <ul class="intro__advantages advantages">
-          <li class="advantages__item advantages__item--ingredients">
-            <p class="advantages__info">Натуральные ингредиенты</p>
-          </li>
-          <li class="advantages__item advantages__item--delivery">
-            <p class="advantages__info">Доставка бесплатно при заказе от 2000 рублей*</p>
-          </li>
-        </ul>
-        <a class="advantages__button button">Выбрать торт</a>
-      </section>
-      <section class="main-page__cakes cakes">
-        <h2 class="cakes__head">Наши торты</h2>
-        <ul class="cakes__list cake-types">
-          <li class="cake-types__item">
-            <img class="cake-types__image" width="283" height="283" src="/placeholder.img" alt="Классические торты">
-            <h3 class="cake-types__head">Классические</h3>
-            <p class="cake-types__count">24 вида</p>
-          </li>
-          <li class="cake-types__item">
-            <img class="cake-types__image" width="283" height="283" src="/placeholder.img" alt="Муссовые торты">
-            <h3 class="cake-types__head">Муссовые</h3>
-            <p class="cake-types__count">12 видов</p>
-          </li>
-          <li class="cake-types__item">
-            <img class="cake-types__image" width="283" height="283" src="/placeholder.img" alt="Свадебные торты">
-            <h3 class="cake-types__head">Свадебные</h3>
-            <p class="cake-types__count">20 видов</p>
-          </li>
-          <li class="cake-types__item">
-            <img class="cake-types__image" width="283" height="283" src="/placeholder.img" alt="Торты мужчинам">
-            <h3 class="cake-types__head">Мужчинам</h3>
-            <p class="cake-types__count">12 видов</p>
-          </li>
-          <li class="cake-types__item">
-            <img class="cake-types__image" width="283" height="283" src="/placeholder.img" alt="Торты женщинам">
-            <h3 class="cake-types__head">Женщинам</h3>
-            <p class="cake-types__count">16 видов</p>
-          </li>
-          <li class="cake-types__item">
-            <img class="cake-types__image" width="283" height="283" src="/placeholder.img" alt="Детские торты">
-            <h3 class="cake-types__head">Детские</h3>
-            <p class="cake-types__count">18 видов</p>
-          </li>
-        </ul>
-      </section>
-      <section class="main-page__individual individual">
-        <h2 class="individual__head">Индивидуальный заказ</h2>
-        <p class="individual__info">Соберите торт в 3 шага</p>
-        <ul class="individual__list DIY-cake">
-          <li class="DIY-cake__item filling">
-            <span class="filling__count">01</span>
-            <h3 class="filling__head">Выберите начинку</h3>
-            <img class="filling__image" width="241" height="113" src="/placeholder.img" alt="Шоколадный ганаш">
-            <p class="filling__info"><b class="filling__info--head">Шоколадный ганаш</b>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-            <p class="filling__price">1000 руб/кг</p>
-            <button type="button" class="filling__button button">Выбрать</button>
-          </li>
-          <li class="DIY-cake__item size">
-            <span class="size__count">02</span>
-            <h3 class="size__head">Размер</h3>
-            <img class="size__image" width="110" height="110" src="/placeholder.img" alt="Резмер торта, 1кг.">
-            <p class="size__info">17-18 см<br>(1 кг – 6 персон)</p>
-            <button type="button" class="size__button button">Выбрать</button>
-          </li>
-          <li class="DIY-cake__item decor">
-            <span class="decor__count">03</span>
-            <h3 class="decor__head">Оформление</h3>
-            <img class="decor__image" width="204" height="318" src="/placeholder.img" alt="Маршмэллоу">
-            <p class="decor__info">Маршмэллоу</p>
-            <p class="decor__price">600 руб/кг</p>
-            <button type="button" class="decor__button button">Выбрать</button>
-          </li>
-        </ul>
-        <div class="individual__order order">
-          <h3 class="order__head">Ваш выбор</h3>
-          <ul class="order__list order-list">
-            <li class="order-list__item">
-              <p class="order-list__item--head">Начинка</p>
-              <p class="order-list__item--info">Шоколадный ганаш</p>
-            </li>
-            <li class="order-list__item">
-              <p class="order-list__item--head">Размер</p>
-              <p class="order-list__item--info">1 кг</p>
-            </li>
-            <li class="order-list__item">
-              <p class="order-list__item--head">Оформление</p>
-              <p class="order-list__item--info">Маршмэллоу</p>
-            </li>
-          </ul>
-          <a class="order__button button">Заказать торт</a>
+  <div class="container-header">
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="visually-hidden">Магазин "Cakes", торты на заказ</h1>
+            <a class="header__logo">Cakes</a>
+            <button class="header__burger" type="button"><span class="visually-hidden">Открытие меню</span></button>
         </div>
-      </section>
+        <nav class="header__navigation main-navigation">
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Наши торты</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Индивидуальный заказ</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Отзывы</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">О нас</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Как заказать</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+      <a class="header__phone">+7 906 899 92 96</a>
+    </header>
+  </div>
+    <main class="main-page">
+        <div class="main-container__top">
+        <section class="main-page__intro intro">
+            <h2 class="intro__head">Торты<br> на заказ</h2>
+            <p class="intro__handmade">Ручная работа</p>
+            <ul class="intro__advantages">
+                <li class="intro__item intro__item--ingredients">
+                    <img class="intro__icon" src="img/icon-ingredients--mobile.png" width="33" height="33">
+                    <p class="intro__info">Натуральные ингредиенты</p>
+                </li>
+                <li class="intro__item intro__item--delivery">
+                    <img class="intro__icon" src="img/icon-delivery.svg" width="33" height="33">
+                    <p class="intro__info">Доставка бесплатно при заказе от 2000 рублей*</p>
+                </li>
+            </ul>
+            <a class="intro__button button">Выбрать торт</a>
+        </section>
+        <section class="main-page__cakes cakes">
+            <h2 class="cakes__head">Наши торты</h2>
+            <ul class="cakes__list cake-types">
+                <li class="cake-types__item cake-types__item--classic">
+                    <h3 class="cake-types__head">Классические</h3>
+                    <p class="cake-types__count">24 вида</p>
+                </li>
+                <li class="cake-types__item cake-types__item--muss">
+                    <h3 class="cake-types__head">Муссовые</h3>
+                    <p class="cake-types__count">12 видов</p>
+                </li>
+                <li class="cake-types__item cake-types__item--wedding">
+                    <h3 class="cake-types__head">Свадебные</h3>
+                    <p class="cake-types__count">20 видов</p>
+                </li>
+                <li class="cake-types__item cake-types__item--for-men">
+                    <h3 class="cake-types__head">Мужчинам</h3>
+                    <p class="cake-types__count">12 видов</p>
+                </li>
+                <li class="cake-types__item cake-types__item--for-women">
+                    <h3 class="cake-types__head">Женщинам</h3>
+                    <p class="cake-types__count">16 видов</p>
+                </li>
+                <li class="cake-types__item cake-types__item--for-children">
+                    <h3 class="cake-types__head">Детские</h3>
+                    <p class="cake-types__count">18 видов</p>
+                </li>
+            </ul>
+        </section>
+        <section class="main-page__individual individual">
+            <h2 class="individual__head">Индивидуальный заказ</h2>
+            <p class="individual__info">Соберите торт в 3 шага</p>
+            <ul class="individual__list DIY-cake">
+                <li class="DIY-cake__item filling">
+                    <div class="filling__wrapper">
+                        <span class="filling__count">01</span>
+                        <h3 class="filling__head">Выберите начинку</h3>
+                    </div>
+                    <img class="filling__image" width="241" height="113" src="img/filling--mobile.png" alt="Шоколадный ганаш">
+                    <p class="filling__header">Шоколадный ганаш</p>
+                    <p class="filling__info">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                    <p class="filling__price">1000 руб/кг</p>
+                    <button type="button" class="filling__button button">Выбрать</button>
+                </li>
+                <li class="DIY-cake__item size">
+                    <div class="size__wrapper">
+                        <span class="size__count">02</span>
+                        <h3 class="size__head">Размер</h3>
+                    </div>
+                    <div class="size__weight">
+                        <img class="size__image" width="110" height="110" src="img/round--mobile.svg" alt="Размер торта, 1кг.">
+                        <p class="size__kg">1 кг</p>
+                    </div>
+                    <p class="size__info">17-18 см<br>(1 кг – 6 персон)</p>
+                    <button type="button" class="size__button button">Выбрать</button>
+                </li>
+                <li class="DIY-cake__item decor">
+                    <div class="decor__wrapper">
+                        <span class="decor__count">03</span>
+                        <h3 class="decor__head">Оформление</h3>
+                    </div>
+                    <img class="decor__image" width="177" height="204" src="img/marshmellow--mobile.png" alt="Маршмэллоу">
+                    <p class="decor__info">Маршмэллоу</p>
+                    <p class="decor__price">600 руб/кг</p>
+                    <button type="button" class="decor__button button">Выбрать</button>
+                </li>
+                <li class="DIY-cake__item order">
+                    <h3 class="order__head">Ваш выбор</h3>
+                    <ul class="order__list">
+                        <li class="order__item">
+                            <p class="order__item--head">Начинка</p>
+                            <p class="order__item--info">Шоколадный ганаш</p>
+                        </li>
+                        <li class="order__item">
+                            <p class="order__item--head">Размер</p>
+                            <p class="order__item--info">1 кг</p>
+                        </li>
+                        <li class="order__item">
+                            <p class="order__item--head">Оформление</p>
+                            <p class="order__item--info">Маршмэллоу</p>
+                        </li>
+                    </ul>
+                    <a class="order__button button">Заказать торт</a>
+                </li>
+            </ul>
+        </section>
       <section class="main-page__review review">
         <h2 class="review__head">Отзывы</h2>
         <ul class="review__list reviews">
@@ -199,6 +211,8 @@
           <img class="care__image" width="323" height="325" alt="Тортик">
         </div>
       </section>
+        </div>
+        <div clas="main-container__middle">
       <section class="main-page__order how-to-order">
         <h2 class="how-to-order__head">Как заказать</h2>
         <ul class="how-to-order__list order-options">
@@ -220,6 +234,8 @@
         </ul>
         <img class="how-to-order__image" width="454" height="232" alt="Доставка">
       </section>
+        </div>
+        <div class="main-container__bottom">
       <section class="main-page__contacts contacts">
         <h2 class="contacts__head">Контакты</h2>
         <p class="contacts__info">Остались вопросы?</p>
@@ -253,6 +269,8 @@
           </ul>
         </div>
       </section>
+        </div>
+        <div class="container-footer">
       <footer class="footer">
         <h2 class="footer__logo">Cakes</h2>
         <ul class="footer__navigation">
@@ -297,6 +315,7 @@
         </ul>
         <p class="footer__copiright">©  2018 Cakes</p>
       </footer>
+        </div>
     </main>
   </body>
 </html>

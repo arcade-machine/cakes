@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.header__wrapper {
+  width: 100%;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.header__burger {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  position: relative;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    top: 4px;
+    left: 0;
+  }
+}
+
+.header__logo {
+  margin: 0;
+  padding: 0;
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.header__navigation {
+}
+
+.header__phone {
+  display: none;
+}

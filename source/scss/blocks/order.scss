@@ -1,0 +1,46 @@
+.order {
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.order__head {
+  padding: 0;
+  margin: 0;
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 22px;
+}
+
+.order__list {
+  padding: 0;
+  margin: 0;
+}
+
+.order__item {
+  list-style: none;
+}
+
+.order__item--head {
+  padding: 0;
+  margin: 0;
+  font-family: "IntroScriptR", serif;
+  font-size: 20px;
+  color: #f50049;
+  text-align: center;
+}
+
+.order__item--info {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border: 2px solid #dddddd;
+}
+
+.order__button {
+  margin: 0 auto;
+}
