@@ -1,9 +1,11 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var plumber = require("gulp-plumber");
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
   return gulp.src('source/scss/styles.scss')
+    .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('source/css'))
     .pipe(browserSync.reload({
@@ -11,7 +13,7 @@ gulp.task('sass', function () {
   }))
 });
 gulp.task('watch', ['browserSync', 'sass'], function () {
-  gulp.watch('source/scss/styles.scss', ['sass']);
+  gulp.watch('source/scss/**/*.scss', ['sass']);
   gulp.watch('source/*.html', browserSync.reload);
   gulp.watch('source/js/*.js', browserSync.reload);
 });

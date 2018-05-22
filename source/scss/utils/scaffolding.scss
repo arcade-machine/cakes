@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Circe Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/circe-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circe Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/circe-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay Bold";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay Bold Italic";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IntroScriptR";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Intro-Script-R-H2-Base.ttf.woff") format("woff");
+}
+
+$tablet: 768px;
+
+$desktop: 1366px;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container-header {
+  width: 100%;
+  min-width: 320px;
+  background-color: #ffffff;
+}
+
+.main-container__top {
+  width: 100%;
+  min-width: 320px;
+  background-color: #fbebea;
+}
