@@ -2,9 +2,10 @@
   width: auto;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 52px;
+  padding-right: 52px;
   border: none;
+  border-radius: 30px;
   display: inline-block;
   position: relative;
   background-color: #f50049;
@@ -13,26 +14,4 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #fefefe;
-
-  &::before {
-    content: "";
-    width: 45px;
-    height: 58px;
-    position: absolute;
-    border-radius: 100%;
-    background-color: #f50049;
-    left: -21px;
-    top: 0;
-  }
-
-  &::after {
-    content: "";
-    width: 45px;
-    height: 58px;
-    position: absolute;
-    border-radius: 100%;
-    background-color: #f50049;
-    right: -21px;
-    top: 0;
-  }
 }

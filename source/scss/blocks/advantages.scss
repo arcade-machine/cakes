@@ -1,24 +1,26 @@
-.individual {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+.advantages {
+  width: 100%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
-.individual__head {
+.advantages__head {
   padding: 0;
   padding-left: 6.5%;
   padding-right: 6.5%;
   margin: 0;
-  margin-bottom: 10px;
   font-family: "PlayfairDisplay Bold", serif;
   font-size: 24px;
+  color: #2d2829;
   text-align: center;
 }
 
-.individual__info {
+.advantages__info {
   padding: 0;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: "IntroScriptR", serif;
   font-size: 22px;
   color: #32313d;

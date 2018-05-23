@@ -1,0 +1,27 @@
+.about-us {
+  width: 100%;
+  max-width: 500px;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about-us__head {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-us__wrapper {
+  padding-right: 56px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us__image {
+  margin-right: 32px;
+}

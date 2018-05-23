@@ -1,8 +1,10 @@
 .header {
   width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   padding-top: 15px;
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
@@ -22,6 +24,7 @@
   position: relative;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -33,6 +36,21 @@
     top: 4px;
     left: 0;
   }
+}
+
+.header__no-js .header__burger{
+  display: none;
+}
+
+.header__no-js .header__logo {
+  margin: 0 auto;
+}
+
+.header__no-js .main-navigation {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__logo {

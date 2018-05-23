@@ -1,9 +1,16 @@
 .main-navigation {
+  position: absolute;
   width: 100%;
-  padding: 0;
-  margin: 0;
+  top: 47px;
+}
+
+.main-navigation__open {
   display: flex;
   flex-direction: column;
+}
+
+.main-navigation__close {
+  display: none;
 }
 
 .main-navigation__list {

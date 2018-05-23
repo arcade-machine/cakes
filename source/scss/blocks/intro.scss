@@ -1,7 +1,9 @@
 .intro {
   width: 100%;
+  max-width: 500px;
   height: auto;
   padding-top: 133px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   background-image: url("../img/cake-top--mobile.png");
