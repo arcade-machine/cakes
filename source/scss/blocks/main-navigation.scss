@@ -40,3 +40,10 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet) {
+  .main-navigation {
+    width: 42%;
+    top: 60px;
+  }
+}

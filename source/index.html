@@ -46,12 +46,15 @@
             <p class="intro__handmade">Ручная работа</p>
             <ul class="intro__advantages">
                 <li class="intro__item intro__item--ingredients">
-                    <img class="intro__icon" src="img/icon-ingredients--mobile.png" width="33" height="33">
-                    <p class="intro__info">Натуральные ингредиенты</p>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/icon-ingredients--tablet.png">
+                        <img class="intro__icon" src="img/icon-ingredients--mobile.png">
+                    </picture>
+                    <p class="intro__info">Натуральные<br> ингредиенты</p>
                 </li>
                 <li class="intro__item intro__item--delivery">
-                    <img class="intro__icon" src="img/icon-delivery.svg" width="33" height="33">
-                    <p class="intro__info">Доставка бесплатно при заказе от 2000 рублей*</p>
+                        <img class="intro__icon intro__icon--delivery" src="img/icon-delivery.svg">
+                    <p class="intro__info">Доставка бесплатно<br> при заказе от 2000 рублей*</p>
                 </li>
             </ul>
             <a class="intro__button button">Выбрать торт</a>
@@ -71,6 +74,12 @@
                     <h3 class="cake-types__head">Свадебные</h3>
                     <p class="cake-types__count">20 видов</p>
                 </li>
+            </ul>
+            <ul class="cakes__list cake-types">
+                <li class="cake-types__item cake-types__item--for-children">
+                    <h3 class="cake-types__head">Детские</h3>
+                    <p class="cake-types__count">18 видов</p>
+                </li>
                 <li class="cake-types__item cake-types__item--for-men">
                     <h3 class="cake-types__head">Мужчинам</h3>
                     <p class="cake-types__count">12 видов</p>
@@ -78,10 +87,6 @@
                 <li class="cake-types__item cake-types__item--for-women">
                     <h3 class="cake-types__head">Женщинам</h3>
                     <p class="cake-types__count">16 видов</p>
-                </li>
-                <li class="cake-types__item cake-types__item--for-children">
-                    <h3 class="cake-types__head">Детские</h3>
-                    <p class="cake-types__count">18 видов</p>
                 </li>
             </ul>
         </section>
@@ -105,11 +110,54 @@
                         <span class="size__count">02</span>
                         <h3 class="size__head">Размер</h3>
                     </div>
-                    <div class="size__weight">
-                        <p class="size__kg">1 кг</p>
-                    </div>
-                    <p class="size__info">17-18 см<br>(1 кг – 6 персон)</p>
-                    <button type="button" class="size__button button">Выбрать</button>
+                    <form class="size__controls">
+                        <label class="size__label">
+                            <span class="size__indicator"></span>
+                            <input class="size__radio" type="radio" name="radio" id="1kg" checked>
+                        </label>
+                        <label class="size__label">
+                            <span class="size__indicator"></span>
+                            <input class="size__radio" type="radio" name="radio" id="2kg">
+                        </label>
+                        <label class="size__label">
+                            <span class="size__indicator"></span>
+                            <input class="size__radio" type="radio" name="radio" id="5kg">
+                        </label>
+                        <label class="size__label">
+                            <span class="size__indicator"></span>
+                            <input class="size__radio" type="radio" name="radio" id="8kg">
+                        </label>
+                    </form>
+                    <ul class="size__options">
+                        <li class="size__item size__item--1kg size__item--current">
+                            <div class="size__weight">
+                                <p class="size__kg">1 кг</p>
+                            </div>
+                            <p class="size__info">17-18 см<br>(1 кг – 6 персон)</p>
+                            <button type="button" class="size__button button">Выбрать</button>
+                        </li>
+                        <li class="size__item size__item--2kg">
+                            <div class="size__weight">
+                                <p class="size__kg">2 кг</p>
+                            </div>
+                            <p class="size__info">23-24 см<br>(10 – 12 персон)</p>
+                            <button type="button" class="size__button button">Выбрать</button>
+                        </li>
+                        <li class="size__item size__item--5kg">
+                            <div class="size__weight">
+                                <p class="size__kg">5 кг</p>
+                            </div>
+                            <p class="size__info">Два яруса 25 и 20 см<br>(15–20 персон)</p>
+                            <button type="button" class="size__button button">Выбрать</button>
+                        </li>
+                        <li class="size__item size__item--8kg">
+                            <div class="size__weight">
+                                <p class="size__kg">8 кг</p>
+                            </div>
+                            <p class="size__info">Три яруса 30,25 и 18 см<br>(25–30 персон)</p>
+                            <button type="button" class="size__button button">Выбрать</button>
+                        </li>
+                    </ul>
                 </li>
                 <li class="DIY-cake__item decor">
                     <div class="decor__wrapper">
@@ -259,17 +307,17 @@
                 <p class="contacts-social__head">Мы в соц. сетях:</p>
                 <ul class="contacts-social__list">
                     <li class="contacts-social__item">
-                        <a href="#" class="contacts-social__item--instagram">
+                        <a href="#" class="contacts-social__link contacts-social__link--instagram">
                             <p class="visually-hidden">Мы в Инстаграме</p>
                         </a>
                     </li>
                     <li class="contacts-social__item">
-                        <a href="#" class="contacts-social__item--vk">
+                        <a href="#" class="contacts-social__link contacts-social__link--vk">
                             <p class="visually-hidden">Мы ВКонтакте</p>
                         </a>
                     </li>
                     <li class="contacts-social__item">
-                        <a href="#" class="contacts-social__item--twitter">
+                        <a href="#" class="contacts-social__link contacts-social__link--twitter">
                             <p class="visually-hidden">Мы в Твиттере</p>
                         </a>
                     </li>
@@ -305,17 +353,17 @@
             </ul>
             <ul class="footer__social footer-social">
                 <li class="footer-social__item">
-                    <a href="#" class="footer-social__item--instagram">
+                    <a href="#" class="footer-social__link footer-social__link--instagram">
                         <p class="visually-hidden">Мы в Инстаграме</p>
                     </a>
                 </li>
                 <li class="footer-social__item">
-                    <a href="#" class="footer-social__item--vk">
+                    <a href="#" class="footer-social__link footer-social__link--vk">
                         <p class="visually-hidden">Мы ВКонтакте</p>
                     </a>
                 </li>
                 <li class="footer-social__item">
-                    <a href="#" class="footer-social__item--twitter">
+                    <a href="#" class="footer-social__link footer-social__link--twitter">
                         <p class="visually-hidden">Мы в Твиттере</p>
                     </a>
                 </li>

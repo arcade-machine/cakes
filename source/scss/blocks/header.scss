@@ -20,6 +20,7 @@
 .header__burger {
   width: 20px;
   height: 20px;
+  padding: 0;
   margin-left: auto;
   position: relative;
   background-color: transparent;
@@ -67,4 +68,40 @@
 
 .header__phone {
   display: none;
+}
+
+@media (min-width: $tablet) {
+  .header {
+    max-width: 900px;
+    padding-right: 48px;
+    padding-bottom: 8px;
+  }
+
+  .header__wrapper {
+    width: 23%;
+    padding-left: 6.7%;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  .header__logo {
+    font-size: 20px;
+  }
+
+  .header__burger {
+    width: 27px;
+    height: 27px;
+
+    &::before {
+      background-size: 100%;
+    }
+  }
+
+  .header__phone {
+    margin-left: auto;
+    display: block;
+    font-family: "Circe Bold", serif;
+    font-weight: 700;
+    font-size: 15px;
+  }
 }

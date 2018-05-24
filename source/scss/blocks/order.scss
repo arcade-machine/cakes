@@ -12,6 +12,7 @@
 .order__head {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   font-family: "PlayfairDisplay Bold", serif;
   font-size: 22px;
 }
@@ -39,11 +40,14 @@
 .order__item--info {
   padding: 0;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   margin: 0;
-  text-align: center;
   border: 1px solid #dddddd;
   border-radius: 15px;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+  color: #2d2829;
+  text-align: center;
 }
 
 .order__button {

@@ -134,6 +134,7 @@ body {
 .header__burger {
   width: 20px;
   height: 20px;
+  padding: 0;
   margin-left: auto;
   position: relative;
   background-color: transparent;
@@ -172,6 +173,30 @@ body {
 .header__phone {
   display: none; }
 
+@media (min-width: 768px) {
+  .header {
+    max-width: 900px;
+    padding-right: 48px;
+    padding-bottom: 8px; }
+  .header__wrapper {
+    width: 23%;
+    padding-left: 6.7%;
+    padding-right: 0;
+    box-sizing: border-box; }
+  .header__logo {
+    font-size: 20px; }
+  .header__burger {
+    width: 27px;
+    height: 27px; }
+    .header__burger::before {
+      background-size: 100%; }
+  .header__phone {
+    margin-left: auto;
+    display: block;
+    font-family: "Circe Bold", serif;
+    font-weight: 700;
+    font-size: 15px; } }
+
 .main-navigation {
   position: absolute;
   width: 100%;
@@ -208,6 +233,11 @@ body {
   color: #383838;
   text-decoration: none;
   text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .main-navigation {
+    width: 42%;
+    top: 60px; } }
 
 .intro {
   width: 100%;
@@ -268,6 +298,9 @@ body {
 
 .intro__icon {
   margin-right: 10px; }
+  .intro__icon--delivery {
+    width: 33px;
+    height: 32px; }
 
 .intro__info {
   width: 200px;
@@ -280,6 +313,43 @@ body {
 .intro__button {
   margin: 0 auto; }
 
+@media (min-width: 768px) {
+  .intro {
+    max-width: 900px;
+    padding-left: 48px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-image: url("../img/cake-top--tablet.png"), url("../img/cherry-top--tablet.png"), url("../img/rasp-top--tablet.png"), url("../img/cherry-top2--tablet.png");
+    background-position: 340px 0, 330px 20px, 300px 225px, 280px 390px; }
+  .intro__head {
+    padding-left: 0;
+    padding-right: 6.3%;
+    font-size: 60px;
+    line-height: 55px;
+    text-align: start; }
+  .intro__handmade {
+    padding-left: 0;
+    padding-right: 6.3%;
+    font-size: 36px;
+    text-align: start; }
+  .intro__button {
+    margin: 0;
+    margin-bottom: 147px;
+    margin-right: auto; }
+  .intro__advantages {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    order: 1; }
+  .intro__info {
+    width: auto;
+    margin-right: 69px;
+    font-size: 14px;
+    align-self: flex-end; }
+  .intro__icon--delivery {
+    width: 55px;
+    height: 54px; } }
+
 .button {
   width: auto;
   padding-top: 16px;
@@ -288,6 +358,7 @@ body {
   padding-right: 52px;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
   display: inline-block;
   position: relative;
   background-color: #f50049;
@@ -310,10 +381,21 @@ body {
   color: #2d2829;
   text-align: center; }
 
+@media (min-width: 768px) {
+  .cakes {
+    max-width: 900px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .cakes__head {
+    font-size: 28px;
+    text-align: start; } }
+
 .cake-types {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
 
 .cake-types__item {
   width: 280px;
@@ -322,7 +404,8 @@ body {
   margin: 0 auto;
   margin-bottom: 10px;
   background-color: #ffffff;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-repeat: no-repeat; }
   .cake-types__item--classic {
     background-image: url("../img/classic--mobile.png"); }
   .cake-types__item--muss {
@@ -334,6 +417,8 @@ body {
   .cake-types__item--for-women {
     background-image: url("../img/for-women--mobile.png"); }
   .cake-types__item--for-children {
+    order: 1;
+    background-color: #f4f2f3;
     background-image: url("../img/for-children--mobile.png"); }
 
 .cake-types__head {
@@ -347,6 +432,59 @@ body {
   margin: 0;
   font-family: "Circe Regular", serif;
   font-size: 12px; }
+
+@media (min-width: 768px) {
+  .cake-types {
+    display: block; }
+    .cake-types::after {
+      content: "";
+      display: table;
+      clear: both; }
+  .cake-types__item {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-position: 50% 50%; }
+    .cake-types__item--classic {
+      width: 57%;
+      min-height: 370px;
+      margin-right: 21px;
+      margin-bottom: 20px;
+      float: left;
+      background-image: url("../img/classic--tablet.png"); }
+    .cake-types__item--muss {
+      width: 39.7%;
+      min-height: 167px;
+      margin-bottom: 35px;
+      float: right;
+      background-image: url("../img/muss--tablet.png"); }
+    .cake-types__item--wedding {
+      width: 39.7%;
+      min-height: 167px;
+      margin-bottom: 20px;
+      float: right;
+      background-image: url("../img/wedding--tablet.png"); }
+    .cake-types__item--for-men {
+      display: inline-block;
+      width: 39.7%;
+      margin-right: 21px;
+      margin-bottom: 35px;
+      min-height: 167px;
+      float: left;
+      background-image: url("../img/for-men--tablet.png"); }
+    .cake-types__item--for-women {
+      display: inline-block;
+      width: 39.7%;
+      min-height: 167px;
+      float: left;
+      background-image: url("../img/for-women--tablet.png"); }
+    .cake-types__item--for-children {
+      display: inline-block;
+      width: 57%;
+      min-height: 370px;
+      margin-bottom: 20px;
+      float: right;
+      background-image: url("../img/for-children--tablet.png"); } }
 
 .individual {
   max-width: 500px;
@@ -448,9 +586,48 @@ body {
   padding-bottom: 25px;
   margin-bottom: 10px;
   box-sizing: border-box;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #ffffff; }
+
+.size__options {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.size__controls {
+  display: none;
+  position: absolute;
+  top: 185px;
+  left: 45%;
+  transform: translate(0, 0); }
+
+.size__indicator {
+  display: block;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #dddddd;
+  border-radius: 50%;
+  margin-right: 5px; }
+
+.size__label input:checked ~ .size__indicator::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #f50049;
+  border-radius: 50%;
+  display: block; }
+
+.size__item {
+  display: none; }
+
+.size__item--current {
+  display: flex;
+  flex-direction: column; }
 
 .size__wrapper {
   display: flex;
@@ -478,6 +655,7 @@ body {
   width: 110px;
   height: 110px;
   margin: 0 auto;
+  margin-bottom: 20px;
   position: relative;
   display: flex;
   align-items: center;
@@ -571,6 +749,7 @@ body {
 .order__head {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   font-family: "PlayfairDisplay Bold", serif;
   font-size: 22px; }
 
@@ -594,11 +773,14 @@ body {
 .order__item--info {
   padding: 0;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   margin: 0;
-  text-align: center;
   border: 1px solid #dddddd;
-  border-radius: 15px; }
+  border-radius: 15px;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+  color: #2d2829;
+  text-align: center; }
 
 .order__button {
   margin: 0 auto; }
@@ -1038,6 +1220,24 @@ body {
   .contacts-social__item:last-child {
     margin-bottom: 0; }
 
+.contacts-social__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat; }
+  .contacts-social__link--instagram {
+    background-image: url("../img/icon-insta.svg");
+    background-position: 50% 50%;
+    background-size: 60%; }
+  .contacts-social__link--vk {
+    background-image: url("../img/vk-logo.svg");
+    background-position: 45% 50%;
+    background-size: 60%; }
+  .contacts-social__link--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-position: 50% 50%;
+    background-size: 60%; }
+
 .footer-social {
   padding: 0;
   margin: 0;
@@ -1048,5 +1248,23 @@ body {
 .footer-social__item {
   width: 40px;
   height: 35px;
-  margin-right: 10px;
-  background-color: red; }
+  margin-right: 10px; }
+
+.footer-social__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  opacity: .5; }
+  .footer-social__link--instagram {
+    background-image: url("../img/icon-insta.svg");
+    background-position: 50% 50%;
+    background-size: 60%; }
+  .footer-social__link--vk {
+    background-image: url("../img/vk-logo.svg");
+    background-position: 45% 50%;
+    background-size: 60%; }
+  .footer-social__link--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-position: 50% 50%;
+    background-size: 60%; }

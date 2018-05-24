@@ -10,5 +10,30 @@
   width: 40px;
   height: 35px;
   margin-right: 10px;
-  background-color: red;
+}
+
+.footer-social__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  opacity: .5;
+
+  &--instagram {
+    background-image: url("../img/icon-insta.svg");
+    background-position: 50% 50%;
+    background-size: 60%;
+  }
+
+  &--vk {
+    background-image: url("../img/vk-logo.svg");
+    background-position: 45% 50%;
+    background-size: 60%;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-position: 50% 50%;
+    background-size: 60%;
+  }
 }
