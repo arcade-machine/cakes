@@ -3,9 +3,6 @@
   padding-bottom: 147px;
   margin: 0;
   list-style: none;
-  background-image: url("../img/order--mobile.png");
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
 }
 
 .order-options__item {
@@ -39,4 +36,10 @@
   font-family: "Circe Regular", serif;
   font-size: 14px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .order-options {
+    padding-bottom: 70px;
+  }
 }

@@ -52,3 +52,14 @@
 .write-us__button {
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .write-us {
+    width: 52%;
+  }
+
+  .write-us__button {
+    margin: 0;
+    margin-right: auto;
+  }
+}

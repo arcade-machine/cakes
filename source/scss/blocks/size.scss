@@ -90,6 +90,7 @@
   display: flex;
   align-items: center;
   background-image: url("../img/round--mobile.svg");
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 
@@ -115,4 +116,88 @@
 
 .size__button {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .size {
+    padding-top: 46px;
+    padding-bottom: 50px;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .size__wrapper {
+    width: 15.3%;
+    margin-right: 2%;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .size__count {
+    margin-right: 0;
+    font-size: 36px;
+  }
+
+  .size__head {
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 18.24px;
+  }
+
+  .size__options {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -20px;
+  }
+
+  .size__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 200px;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .size__weight {
+    &--1kg {
+      width: 77px;
+      height: 77px;
+    }
+
+    &--2kg {
+      width: 108px;
+      height: 107px;
+    }
+
+    &--5kg {
+      width: 120px;
+      height: 121px;
+      background-image: url("../img/round--mobile.svg"), url("../img/round--mobile.svg");
+      background-size: 100%, 70%;
+      background-position: 0 0, 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    &--8kg {
+      width: 139px;
+      height: 141px;
+      background-image: url("../img/round--mobile.svg"), url("../img/round--mobile.svg"), url("../img/round--mobile.svg");
+      background-size: 100%, 70%, 45%;
+      background-position: 0 0, 50% 50%, 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .size__info {
+    margin-bottom: 0;
+  }
+
+  .size__button {
+    display: none;
+  }
 }

@@ -15,3 +15,16 @@
   color: #ffffff;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .how-to-order {
+    max-width: 900px;
+    padding-top: 50px;
+    padding-left: 43%;
+  }
+
+  .how-to-order__head {
+    font-size: 28px;
+    text-align: start;
+  }
+}

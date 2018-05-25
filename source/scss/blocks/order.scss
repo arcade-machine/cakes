@@ -53,3 +53,54 @@
 .order__button {
   margin: 0 auto;
 }
+
+@media (min-width: $tablet) {
+  .order {
+    padding-bottom: 50px;
+    padding-left: 46px;
+    padding-right: 46px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .order__head {
+    width: 100%;
+  }
+
+  .order__list {
+    width: 70%;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .order__item{
+    &--filling {
+      width: 37%;
+    }
+
+    &--size {
+      width: 17%;
+    }
+
+    &--decor {
+      width: 36.5%;
+    }
+  }
+
+  .order__item--head {
+    font-size: 18px;
+    text-align: start;
+  }
+
+  .order__item--info {
+    font-size: 12px;
+  }
+
+  .order__button {
+    margin: 0;
+    margin-left: auto;
+    margin-top: auto;
+  }
+}

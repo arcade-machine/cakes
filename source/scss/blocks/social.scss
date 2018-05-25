@@ -45,6 +45,12 @@
     background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
   }
+}
 
-
+@media (min-width: $tablet) {
+  .social {
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+  }
 }

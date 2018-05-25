@@ -38,3 +38,21 @@
   font-family: "Circe Regular", serif;
   font-size: 14px;
 }
+
+@media (min-width: $tablet) {
+  .about-info {
+    width: 49%;
+  }
+
+  .about-info__head {
+    font-size: 26px;
+  }
+
+  .about-info__header {
+    font-size: 15px;
+  }
+
+  .about-info__content {
+    font-size: 14px;
+  }
+}

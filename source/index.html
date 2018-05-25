@@ -99,11 +99,20 @@
                         <span class="filling__count">01</span>
                         <h3 class="filling__head">Выберите начинку</h3>
                     </div>
-                    <img class="filling__image" width="241" height="113" src="img/filling--mobile.png" alt="Шоколадный ганаш">
-                    <p class="filling__header">Шоколадный ганаш</p>
-                    <p class="filling__info">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                    <p class="filling__price">1000 руб/кг</p>
-                    <button type="button" class="filling__button button">Выбрать</button>
+                    <ul class="filling__types">
+                        <li class="filling__item filling__item--ganash">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="img/filling--tablet.png">
+                                <img class="filling__image" src="img/filling--mobile.png" alt="Шоколадный ганаш">
+                            </picture>
+                            <div class="filling__content">
+                                <p class="filling__header">Шоколадный ганаш</p>
+                                <p class="filling__info">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                                <p class="filling__price">1000 руб/кг</p>
+                                <button type="button" class="filling__button button">Выбрать</button>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
                 <li class="DIY-cake__item size">
                     <div class="size__wrapper">
@@ -130,28 +139,28 @@
                     </form>
                     <ul class="size__options">
                         <li class="size__item size__item--1kg size__item--current">
-                            <div class="size__weight">
+                            <div class="size__weight size__weight--1kg">
                                 <p class="size__kg">1 кг</p>
                             </div>
                             <p class="size__info">17-18 см<br>(1 кг – 6 персон)</p>
                             <button type="button" class="size__button button">Выбрать</button>
                         </li>
                         <li class="size__item size__item--2kg">
-                            <div class="size__weight">
+                            <div class="size__weight size__weight--2kg">
                                 <p class="size__kg">2 кг</p>
                             </div>
                             <p class="size__info">23-24 см<br>(10 – 12 персон)</p>
                             <button type="button" class="size__button button">Выбрать</button>
                         </li>
                         <li class="size__item size__item--5kg">
-                            <div class="size__weight">
+                            <div class="size__weight size__weight--5kg">
                                 <p class="size__kg">5 кг</p>
                             </div>
                             <p class="size__info">Два яруса 25 и 20 см<br>(15–20 персон)</p>
                             <button type="button" class="size__button button">Выбрать</button>
                         </li>
                         <li class="size__item size__item--8kg">
-                            <div class="size__weight">
+                            <div class="size__weight size__weight--8kg">
                                 <p class="size__kg">8 кг</p>
                             </div>
                             <p class="size__info">Три яруса 30,25 и 18 см<br>(25–30 персон)</p>
@@ -164,23 +173,36 @@
                         <span class="decor__count">03</span>
                         <h3 class="decor__head">Оформление</h3>
                     </div>
-                    <img class="decor__image" width="177" height="204" src="img/marshmellow--mobile.png" alt="Маршмэллоу">
-                    <p class="decor__info">Маршмэллоу</p>
-                    <p class="decor__price">600 руб/кг</p>
-                    <button type="button" class="decor__button button">Выбрать</button>
+                    <ul class="decor__item">
+                        <li class="decor__content decor__content--platter">
+                            <img class="decor__image" src="img/platter--tablet.png" alt="Ягодное ассорти">
+                            <p class="decor__info">Ягодное ассорти</p>
+                            <p class="decor__price">700 руб/кг</p>
+                            <button type="button" class="decor__button button">Выбрать</button>
+                        </li>
+                        <li class="decor__content decor__content--marshmellow decor__content--current">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="img/marshmellow--tablet.png">
+                                <img class="decor__image" src="img/marshmellow--mobile.png" alt="Маршмэллоу">
+                            </picture>
+                            <p class="decor__info">Маршмэллоу</p>
+                            <p class="decor__price">600 руб/кг</p>
+                            <button type="button" class="decor__button button">Выбрать</button>
+                        </li>
+                    </ul>
                 </li>
                 <li class="DIY-cake__item order">
                     <h3 class="order__head">Ваш выбор</h3>
                     <ul class="order__list">
-                        <li class="order__item">
+                        <li class="order__item order__item--filling">
                             <p class="order__item--head">Начинка</p>
                             <p class="order__item--info">Шоколадный ганаш</p>
                         </li>
-                        <li class="order__item">
+                        <li class="order__item order__item--size">
                             <p class="order__item--head">Размер</p>
                             <p class="order__item--info">1 кг</p>
                         </li>
-                        <li class="order__item">
+                        <li class="order__item order__item--decor">
                             <p class="order__item--head">Оформление</p>
                             <p class="order__item--info">Маршмэллоу</p>
                         </li>
@@ -193,17 +215,25 @@
             <h2 class="review__head">Отзывы</h2>
             <ul class="review__list reviews">
                 <li class="reviews__item">
-                    <img class="reviews__photo" src="img/review--mobile.png" width="59" height="59" alt="Мария, юрист, 33 года">
-                    <h3 class="reviews__name">Мария</h3>
-                    <span class="reviews__info">юрист, 33 года</span>
-                    <p class="reviews__content">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a></p>
+                    <picture>
+                        <source media="(min-width: 768px") srcset="img/review--tablet.png">
+                        <img class="reviews__photo" src="img/review--mobile.png" alt="Мария, юрист, 33 года">
+                    </picture>
+                    <div class="reviews__wrapper">
+                        <h3 class="reviews__name">Мария</h3>
+                        <span class="reviews__info">юрист, 33 года</span>
+                        <p class="reviews__content">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) <a href="#" class="reviews__link">Развернуть</a></p>
+                    </div>
                 </li>
             </ul>
         </section>
         <section class="main-page__about-us about-us" id="AboutUs">
             <h2 class="about-us__head">О нас</h2>
             <div class="about-us__wrapper">
-                <img class="about-us__image" width="156" height="155" src="img/conditer-photo--mobile.png" alt="Кондитер">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/conditer-photo--tablet.png">
+                    <img class="about-us__image" src="img/conditer-photo--mobile.png" alt="Кондитер">
+                </picture>
                 <ul class="about-us__social social">
                     <li class="social__item">
                         <a href="#" class="social__link social__link--instagram">
@@ -238,20 +268,33 @@
         </section>
         <section class="main-page__advantages-care advantages-care">
             <p class="advantages-care__quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
-            <img class="advantages-care__signature" width="64" height="31" src="img/signarue--mobile.png" alt="Подпись">
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/signature--tablet.png">
+                <img class="advantages-care__signature" src="img/signature--mobile.png" alt="Подпись">
+            </picture>
             <div class="advantages-care__advantages advantages">
                 <h2 class="advantages__head">Наши преимущества</h2>
                 <p class="advantages__info">Почему нас выбирают ?</p>
                 <ul class="advantages__list advantages-list">
                     <li class="advantages-list__item advantages-list__item--ingredients">
-                        <img class="advantages-list__icon" src="img/icon-ingredients-bit--mobile.png" width="61" height="61">
-                        <h3 class="advantages-list__head">Без искусственных добавок</h3>
-                        <p class="advantages-list__info">Работаем  с натуральными ингредиентами и свежими продуктами</p>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/icon-ingredients-big--tablet.png">
+                            <img class="advantages-list__icon" src="img/icon-ingredients-big--mobile.png">
+                        </picture>
+                        <div class="advantages-list__wrapper">
+                            <h3 class="advantages-list__head">Без искусственных добавок</h3>
+                            <p class="advantages-list__info">Работаем  с натуральными ингредиентами и свежими продуктами</p>
+                        </div>
                     </li>
                     <li class="advantages-list__item advantages-list__item--cakes">
-                        <img class="advantages-list__icon" src="img/icon-cake-big--mobile.png" width="84" height="50">
-                        <h3 class="advantages-list__head">Свежий торт в день торжества</h3>
-                        <p class="advantages-list__info">Торты изготавливаются в течение суток до отправки</p>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/icon-cake-big--tablet.png">
+                            <img class="advantages-list__icon" src="img/icon-cake-big--mobile.png">
+                        </picture>
+                        <div class="advantages-list__wrapper">
+                            <h3 class="advantages-list__head">Свежий торт в день торжества</h3>
+                            <p class="advantages-list__info">Торты изготавливаются в течение суток до отправки</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -301,27 +344,29 @@
                 <textarea class="write-us__more" placeholder="Ваш вопрос"></textarea>
                 <button type="submit" class="write-us__button button">Отправить</button>
             </form>
-            <p class="contacts__phone">Или позвоните по телефону:<br><a href="tel:+7 906 899 92 96">+7 906 899 92 96</a></p>
-            <p class="contacts__email">Наша почта:<a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></p>
-            <div class="contacts__social contacts-social">
-                <p class="contacts-social__head">Мы в соц. сетях:</p>
-                <ul class="contacts-social__list">
-                    <li class="contacts-social__item">
-                        <a href="#" class="contacts-social__link contacts-social__link--instagram">
-                            <p class="visually-hidden">Мы в Инстаграме</p>
-                        </a>
-                    </li>
-                    <li class="contacts-social__item">
-                        <a href="#" class="contacts-social__link contacts-social__link--vk">
-                            <p class="visually-hidden">Мы ВКонтакте</p>
-                        </a>
-                    </li>
-                    <li class="contacts-social__item">
-                        <a href="#" class="contacts-social__link contacts-social__link--twitter">
-                            <p class="visually-hidden">Мы в Твиттере</p>
-                        </a>
-                    </li>
-                </ul>
+            <div class="contacts__wrapper">
+                <p class="contacts__phone">Или позвоните по телефону:<br><a href="tel:+7 906 899 92 96">+7 906 899 92 96</a></p>
+                <p class="contacts__email">Наша почта:<a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></p>
+                <div class="contacts__social contacts-social">
+                    <p class="contacts-social__head">Мы в соц. сетях:</p>
+                    <ul class="contacts-social__list">
+                        <li class="contacts-social__item">
+                            <a href="#" class="contacts-social__link contacts-social__link--instagram">
+                                <p class="visually-hidden">Мы в Инстаграме</p>
+                            </a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a href="#" class="contacts-social__link contacts-social__link--vk">
+                                <p class="visually-hidden">Мы ВКонтакте</p>
+                            </a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a href="#" class="contacts-social__link contacts-social__link--twitter">
+                                <p class="visually-hidden">Мы в Твиттере</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         </div>
@@ -347,28 +392,30 @@
                 <li class="footer__item">
                     <a href="#Contacts" class="footer__link">Контакты</a>
                 </li>
-                <li class="footer__item">
+                <li class="footer__item footer__item--phone">
                     <a href="tel:+7 906 899 92 96" class="footer__link">+7 906 899 92 96</a>
                 </li>
             </ul>
-            <ul class="footer__social footer-social">
-                <li class="footer-social__item">
-                    <a href="#" class="footer-social__link footer-social__link--instagram">
-                        <p class="visually-hidden">Мы в Инстаграме</p>
-                    </a>
-                </li>
-                <li class="footer-social__item">
-                    <a href="#" class="footer-social__link footer-social__link--vk">
-                        <p class="visually-hidden">Мы ВКонтакте</p>
-                    </a>
-                </li>
-                <li class="footer-social__item">
-                    <a href="#" class="footer-social__link footer-social__link--twitter">
-                        <p class="visually-hidden">Мы в Твиттере</p>
-                    </a>
-                </li>
-            </ul>
-            <p class="footer__copiright">©  2018 Cakes</p>
+            <div class="footer__wrapper">
+                <ul class="footer__social footer-social">
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link footer-social__link--instagram">
+                            <p class="visually-hidden">Мы в Инстаграме</p>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link footer-social__link--vk">
+                            <p class="visually-hidden">Мы ВКонтакте</p>
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link footer-social__link--twitter">
+                            <p class="visually-hidden">Мы в Твиттере</p>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__copiright">©  2018 Cakes</p>
+            </div>
         </footer>
         </div>
     </main>

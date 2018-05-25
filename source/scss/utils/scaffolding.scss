@@ -76,6 +76,9 @@ body {
   width: 100%;
   min-width: 320px;
   background-color: #e3353d;
+  background-image: url("../img/order--mobile.png");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
 }
 
 .main-container__bottom {
@@ -88,4 +91,11 @@ body {
   width: 100%;
   min-width: 320px;
   background-color: #898989;
+}
+
+@media (min-width: $tablet) {
+  .main-container__middle {
+    background-image: url("../img/order--tablet.png");
+    background-position: -300px 40px;
+  }
 }

@@ -35,3 +35,43 @@
   font-size: 14px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .advantages-list {
+    width: 100%;
+    padding: 0;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .advantages-list__item {
+    width: 50%;
+    min-height: auto;
+    margin-left: auto;
+    display: flex;
+  }
+
+  .advantages-list__head {
+    font-size: 15px;
+    text-align: start;
+  }
+
+  .advantages-list__icon {
+    max-width: 100%;
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .advantages-list__info {
+    font-size: 14px;
+    text-align: start;
+  }
+
+  .advantages-list__wrapper {
+    width: 74%;
+    margin-left: auto;
+  }
+}
+

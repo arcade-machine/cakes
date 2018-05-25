@@ -32,3 +32,20 @@
   font-family: "Circe Regular", serif;
   font-size: 14px;
 }
+
+@media (min-width: $tablet) {
+  .care {
+    max-width: 900px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 150px;
+    padding-bottom: 130px;
+    margin: 0;
+    background-image: none;
+  }
+
+  .care__content {
+    width: 47%;
+  }
+}
