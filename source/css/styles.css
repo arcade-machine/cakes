@@ -144,7 +144,16 @@ body {
   .footer__item--phone {
     display: none; }
   .footer__copiright {
-    width: auto; } }
+    width: auto;
+    border-top: none; }
+  .footer__wrapper {
+    width: 640px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #959595; }
+  .footer__social {
+    order: 1; } }
 
 .header {
   width: 100%;
@@ -1557,7 +1566,7 @@ body {
     width: 100%;
     font-size: 22px; }
   .contacts__wrapper {
-    width: 30%; } }
+    width: 33%; } }
 
 .write-us {
   display: flex;
