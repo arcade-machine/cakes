@@ -47,3 +47,29 @@
     top: 60px;
   }
 }
+
+@media (min-width: $desktop) {
+  .main-navigation {
+    width: 79%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+  }
+
+  .main-navigation__item {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .main-navigation__link {
+    font-size: 13px;
+  }
+}

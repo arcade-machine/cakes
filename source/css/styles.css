@@ -82,6 +82,10 @@ body {
     background-image: url("../img/order--tablet.png");
     background-position: -300px 40px; } }
 
+@media (min-width: 1366px) {
+  .container-header {
+    background-color: #fbebea; } }
+
 .footer {
   max-width: 500px;
   padding-top: 44px;
@@ -238,6 +242,17 @@ body {
     font-weight: 700;
     font-size: 15px; } }
 
+@media (min-width: 1366px) {
+  .header {
+    max-width: 1366px;
+    background-color: #fbebea; }
+  .header__logo {
+    font-size: 23px; }
+  .header__wrapper {
+    width: 12%; }
+  .header__burger {
+    display: none; } }
+
 .main-navigation {
   position: absolute;
   width: 100%;
@@ -279,6 +294,24 @@ body {
   .main-navigation {
     width: 42%;
     top: 60px; } }
+
+@media (min-width: 1366px) {
+  .main-navigation {
+    width: 79%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: transparent; }
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent; }
+  .main-navigation__item {
+    padding: 0;
+    border: none;
+    background-color: transparent; }
+  .main-navigation__link {
+    font-size: 13px; } }
 
 .intro {
   width: 100%;

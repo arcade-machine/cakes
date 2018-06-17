@@ -99,3 +99,9 @@ body {
     background-position: -300px 40px;
   }
 }
+
+@media (min-width: $desktop) {
+  .container-header {
+    background-color: #fbebea;
+  }
+}
