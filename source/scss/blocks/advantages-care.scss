@@ -35,9 +35,45 @@
     margin-bottom: 25px;
     font-size: 14px;
     line-height: 21px;
+    position: relative;
+
+    &::before {
+      content: ',,';
+      position: absolute;
+      top: -65px;
+      left: 48%;
+      font-size: 77px;
+      font-family: "PlayfairDisplay Bold", serif;
+      color: #ffffff;
+    }
   }
 
   .advantages-care__signature {
     margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages-care {
+    max-width: 1220px;
+    padding: 0;
+    background-image: url("../img/advantages-cake.png"), url("../img/advantages-1--desktop.png"), url("../img/advantages-2--desktop.png"), url("../img/advantages-3--desktop.png"), url("../img/advantages-4--desktop.png"), url("../img/cake-middle--desktop.png"), url("../img/dish--desktop.png"), url("../img/sparkles--desktop.png");
+    background-size: 550px 547px, 52px 54px, 103px 148px, 51px 48px, 167px 132px, 590px 577px, 649px 651px, 768px 802px;
+    background-position: 0 45%, 0 33%, 55px 26%, 207px 26%, 520px 53%, 98% 96%, 102% 100%, 110% 114%;
+    background-repeat: no-repeat;
+  }
+
+  .advantages-care__quote {
+    font-size: 25px;
+
+    &::before {
+      top: -105px;
+      left: 44%;
+      font-size: 140px;
+    }
+  }
+
+  .advantages-care__signature {
+    margin-bottom: 100px;
   }
 }

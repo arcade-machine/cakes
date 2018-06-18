@@ -150,3 +150,33 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $desktop) {
+  .filling__count {
+    font-size: 59px;
+  }
+
+  .filling__head {
+    font-size: 27px;
+  }
+
+  .filling__image {
+    margin-bottom: 0;
+  }
+
+  .filling__content {
+    padding-top: 60px;
+  }
+
+  .filling__header {
+    font-size: 20px;
+  }
+
+  .filling__info {
+    font-size: 18px;
+  }
+
+  .filling__price {
+    font-size: 22px;
+  }
+}

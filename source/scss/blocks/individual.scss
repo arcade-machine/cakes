@@ -42,3 +42,17 @@
     font-size: 26px;
   }
 }
+
+@media (min-width: $desktop) {
+  .individual {
+    max-width: 1220px;
+  }
+
+  .individual__head {
+    font-size: 40px;
+  }
+
+  .individual__info {
+    font-size: 35px;
+  }
+}

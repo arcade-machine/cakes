@@ -28,3 +28,17 @@
     text-align: start;
   }
 }
+
+@media (min-width: $desktop) {
+  .how-to-order {
+    max-width: 1220px;
+    padding-top: 125px;
+    padding-bottom: 80px;
+    padding-left: 700px;
+  }
+
+  .how-to-order__head {
+    font-size: 40px;
+    text-align: start;
+  }
+}

@@ -17,22 +17,21 @@
   height: 100%;
   display: block;
   background-repeat: no-repeat;
-  opacity: .5;
 
   &--instagram {
-    background-image: url("../img/icon-insta.svg");
+    background-image: url("../img/icon-insta-grey.svg");
     background-position: 50% 50%;
     background-size: 60%;
   }
 
   &--vk {
-    background-image: url("../img/vk-logo.svg");
+    background-image: url("../img/vk-logo-grey.svg");
     background-position: 45% 50%;
     background-size: 60%;
   }
 
   &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter-grey.svg");
     background-position: 50% 50%;
     background-size: 60%;
   }

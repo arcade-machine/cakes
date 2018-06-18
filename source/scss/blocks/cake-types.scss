@@ -15,6 +15,11 @@
   background-color: #ffffff;
   box-sizing: border-box;
   background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 36px 3px rgba(251,235,234,1);
+  }
   
   &--classic {
     background-image: url("../img/classic--mobile.png");
@@ -73,6 +78,7 @@
     padding: 20px;
     margin: 0;
     background-position: 50% 50%;
+    background-color: #ffffff;
 
     &--classic {
       width: 57%;
@@ -123,7 +129,42 @@
       min-height: 370px;
       margin-bottom: 20px;
       float: right;
+      background-color: #f4f4f6;
       background-image: url("../img/for-children--tablet.png");
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .cake-types__item {
+    &--classic {
+      min-height: 653px;
+      background-image: url("../img/classic--desktop.png");
+    }
+
+    &--muss {
+      min-height: 307px;
+      background-image: url("../img/muss--desktop.png");
+    }
+
+    &--wedding {
+      min-height: 307px;
+      background-image: url("../img/wedding--desktop.png");
+    }
+
+    &--for-men {
+      min-height: 307px;
+      background-image: url("../img/for-men--desktop.png");
+    }
+
+    &--for-women {
+      min-height: 307px;
+      background-image: url("../img/for-women--desktop.png");
+    }
+
+    &--for-children {
+      min-height: 653px;
+      background-image: url("../img/for-children--desktop.png");
     }
   }
 }

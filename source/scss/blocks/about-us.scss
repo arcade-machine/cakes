@@ -57,3 +57,16 @@
     justify-content: flex-start;
   }
 }
+
+@media (min-width: $desktop) {
+  .about-us {
+    max-width: 1220px;
+    padding: 0;
+    margin-bottom: 200px;
+  }
+
+  .about-us__head {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+}

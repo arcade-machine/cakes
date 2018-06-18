@@ -49,3 +49,23 @@
     width: 47%;
   }
 }
+
+@media (min-width: $desktop) {
+  .care {
+    max-width: 1220px;
+    padding-top: 400px;
+    padding-bottom: 260px;
+  }
+
+  .care__head {
+    font-size: 40px;
+  }
+
+  .care__info {
+    font-size: 40px;
+  }
+
+  .care__content {
+    font-size: 20px;
+  }
+}

@@ -81,7 +81,7 @@
   }
 
   .footer__wrapper {
-    width: 640px;
+    width: 83%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -90,5 +90,26 @@
 
   .footer__social {
     order: 1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer {
+    max-width: 1220px;
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  .footer__logo {
+    font-size: 28px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
+
+  .footer__copiright {
+    margin-right: 40px;
+    font-size: 16px;
   }
 }

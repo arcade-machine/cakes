@@ -83,3 +83,21 @@
     text-align: start;
   }
 }
+
+@media (min-width: $desktop) {
+  .reviews {
+    width: 75%;
+  }
+
+  .reviews__name {
+    font-size: 27px;
+  }
+
+  .reviews__info {
+    font-size: 20px;
+  }
+
+  .reviews__content {
+    font-size: 19px;
+  }
+}

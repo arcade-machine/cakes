@@ -82,6 +82,9 @@
     padding-left: 46px;
     padding-right: 46px;
     flex-direction: row;
+    background-image: url('../img/cherry-decor--tablet.png');
+    background-position: 35px 160px;
+    background-repeat: no-repeat;
   }
 
   .decor__wrapper {
@@ -118,5 +121,33 @@
 
   .decor__button {
     display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .decor {
+    background-image: url('../img/cherry-decor--desktop.png');
+  }
+
+  .decor__count {
+    font-size: 65px;
+  }
+
+  .decor__head {
+    font-size: 27px;
+  }
+
+  .decor__item {
+    width: 73%;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+
+  .decor__info {
+    font-size: 20px;
+  }
+
+  .decor__price {
+    font-size: 22px;
   }
 }

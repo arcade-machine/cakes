@@ -63,9 +63,6 @@
   letter-spacing: 0.05em;
 }
 
-.header__navigation {
-}
-
 .header__phone {
   display: none;
 }
@@ -108,8 +105,10 @@
 
 @media (min-width: $desktop) {
   .header {
-    max-width: 1366px;
-    background-color: #fbebea;
+    max-width: 1220px;
+    padding-right: 0;
+    padding-bottom: 0;
+    align-items: baseline;
   }
 
   .header__logo {
@@ -117,7 +116,8 @@
   }
 
   .header__wrapper {
-    width: 12%;
+    width: 5%;
+    padding: 0;
   }
 
   .header__burger {

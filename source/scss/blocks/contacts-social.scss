@@ -55,3 +55,9 @@
     background-size: 60%;
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts-social__head {
+    font-size: 20px;
+  }
+}

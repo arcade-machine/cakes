@@ -201,3 +201,26 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop) {
+  .size {
+    margin-bottom: 21px;
+  }
+
+  .size__count {
+    font-size: 65px;
+  }
+
+  .size__head {
+    font-size: 27px;
+  }
+
+  .size__options {
+    width: 77%;
+    margin: 0 auto;
+  }
+
+  .size__info {
+    font-size: 18px;
+  }
+}

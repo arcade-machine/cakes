@@ -50,26 +50,40 @@
 
 @media (min-width: $desktop) {
   .main-navigation {
-    width: 79%;
+    width: 67%;
     position: relative;
     top: 0;
     left: 0;
     background-color: transparent;
+    box-sizing: border-box;
+  }
+
+  .main-navigation__close {
+    display: block;
   }
 
   .main-navigation__list {
     display: flex;
     flex-direction: row;
     background-color: transparent;
+    align-items: baseline;
   }
 
   .main-navigation__item {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 0;
+    box-sizing: border-box;
     border: none;
     background-color: transparent;
   }
 
   .main-navigation__link {
     font-size: 13px;
+
+    &:hover {
+      color: #f50049;
+    }
   }
 }

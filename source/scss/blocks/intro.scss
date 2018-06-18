@@ -132,3 +132,28 @@
     height: 54px;
   }
 }
+
+@media (min-width: $desktop) {
+  .intro {
+    max-width: 1220px;
+    padding-left: 0;
+    padding-top: 150px;
+    margin-bottom: 255px;
+    background-image: none;
+    position: relative;
+  }
+
+  .intro__head {
+    padding: 0;
+    font-size: 78px;
+  }
+
+  .intro__handmade {
+    padding: 0;
+    font-size: 41px;
+  }
+
+  .intro__button {
+    margin-bottom: 127px;
+  }
+}

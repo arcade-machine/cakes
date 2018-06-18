@@ -104,3 +104,21 @@
     margin-top: auto;
   }
 }
+
+@media (min-width: $desktop) {
+  .order__head {
+    font-size: 27px;
+  }
+
+  .order__item--head {
+    font-size: 27px;
+  }
+
+  .order__item--info {
+    font-size: 18px;
+    text-align: start;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0;
+  }
+}

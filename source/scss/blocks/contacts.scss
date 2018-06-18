@@ -78,3 +78,33 @@
     width: 33%;
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts {
+    max-width: 1220px;
+    padding: 0;
+    padding-top: 40px;
+    justify-content: flex-start;
+  }
+
+  .contacts__head {
+    padding-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .contacts__info {
+    font-size: 35px;
+  }
+
+  .contacts__phone {
+    font-size: 20px;
+  }
+
+  .contacts__email {
+    font-size: 20px;
+  }
+
+  .contacts__wrapper {
+    width: 26%;
+  }
+}

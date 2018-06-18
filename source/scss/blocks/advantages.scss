@@ -41,3 +41,18 @@
     font-size: 26px;
   }
 }
+
+@media (min-width: $desktop) {
+  .advantages {
+    margin-bottom: 50px;
+  }
+
+  .advantages__head {
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .advantages__info {
+    font-size: 35px;
+  }
+}
